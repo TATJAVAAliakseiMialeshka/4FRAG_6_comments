@@ -62,7 +62,7 @@ public class BasePageClass //extends DriverSingleton
 
     @BeforeClass
     public void setUp() {
-        DriverSingleton.getDriver();
+        driver = DriverSingleton.getDriver();
     }
 
     @AfterClass
