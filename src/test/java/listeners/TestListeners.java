@@ -33,8 +33,8 @@ public class TestListeners extends BasePageClass implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        logger.warn("On Test Failed " + result.getName());
-
+        logger.error("On Test Failed " + result.getName());
+        saveScreenshot();
     }
 
     @Override
